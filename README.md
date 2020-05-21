@@ -93,9 +93,48 @@ Actions são responsáveis por requisitar algo para um reducer. Elas devem ser s
  
 ```
 
-## 🚀 Instalação e execução
+
+## <img src="https://static.thenounproject.com/png/9280-200.png" width="30px"/> Libraries
+
+### [JSON Server](https://www.npmjs.com/package/json-server)
+  Essa biblioteca foi utilizada para cirar uma API REST fake, para simular consultas e assim utilizar as funcionalidades do redux.
+  
+### [IMMER](https://github.com/immerjs/immer)
+  Essa lib ajuda a lidar com objetos e arrays imutaveis do react;
+  <p>A ideia básica é que você aplique todas as suas alterações a um draftState temporário , que é um proxy do currentState . Quando todas as suas mutações estiverem concluídas, o Immer produzirá o nextState com base nas mutações no estado de rascunho. Isso significa que você pode interagir com seus dados simplesmente modificando-os, mantendo todos os benefícios de dados imutáveis.</p>
+  <img src="https://immerjs.github.io/immer/img/immer.png" />.
+  
+### [Reactotron](https://github.com/infinitered/reactotron) 
+  além de ser uma libtambém é um software de monitoramento e debug da aplicação em desenvolvimento
+ 
+ Use it to:
+
+  - view your application state
+  - show API requests & responses
+  - perform quick performance benchmarks
+  - subscribe to parts of your application state
+  - display messages similar to `console.log`
+  - track global errors with source-mapped stack traces including saga stack traces!
+  - dispatch actions like a government-run mind control experiment
+  - hot swap your app's state using Redux or mobx-state-tree
+  - track your sagas
+  - show image overlay in React Native
+  - track your Async Storage in React Native
+
+You plug it into your app as a dev dependency so it adds nothing to your product builds.
+
+### [Redux-Saga](https://redux-saga.js.org/)
+  <img src="https://redux-saga.js.org/logo/0800/Redux-Saga-Logo-Landscape.png" />
+  É uma biblioteca que visa tornar os efeitos colaterais do aplicativo (ou seja, coisas assíncronas, como busca de dados e coisas impuras, como acessar o cache do navegador) mais fáceis de gerenciar, mais eficientes de executar, fáceis de testar e melhores no tratamento de falhas, assim criando um passo a mais no proceso do redux entre a action e o reducer.
+  
+### Toastify
+  O React-Toastify permite adicionar notificações ao seu aplicativo com facilidade. Chega de bobagens!
+  ![demonstração](https://user-images.githubusercontent.com/5574267/35336500-e58f35b6-0118-11e8-800b-2da6594fc700.gif)
+
+##  🚀 Instalação e execução
 
 1. Faça um clone desse repositório;
-2. Entre na pasta rodando `cd RocketShoes`;
+2. Entre na pasta rodando `cd RocketShoes-Redux`;
 3. Rode `yarn` para instalar as dependências;
-4. Rode `yarn start` para iniciar a aplicação.
+4. Rode `yarn start` para iniciar a aplicação;
+5. Rode `json-server server.json -p 3333`.
